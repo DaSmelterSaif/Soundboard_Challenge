@@ -1,0 +1,64 @@
+/*Style of the page is to be edited later.
+All changes are temporary*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 90px;
+    font-family: Arial;
+    margin: 20px;
+}
+
+/*--------Navigation bar--------*/
+
+/*A horizontal navigation bar that spans half of the page and
+is colored gray with black text and turns purple when hovering
+with white text color*/
+
+nav {
+    width: 50%;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: gray;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    padding: 15px;
+    background-color: gray;
+    color: black;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav li {
+    float: left;
+    list-style-type: none;
+}
+
+nav a:hover {
+    background-color: purple;
+    color: white;
+}
+/*--------Navigation Bar End--------*/
+
+/*Logo style*/
+.logo {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+
+/*Audio element style is to be reworked*/
+audio {
+    margin: 30px;
+}
