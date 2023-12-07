@@ -62,3 +62,33 @@ nav a:hover {
 audio {
     margin: 30px;
 }
+
+/*Audio style is to be edited*/
+audio::-webkit-media-controls-panel {
+    background-color: aquamarine;
+}
+
+/*Temporary until p elements are inside div elements*/
+.Soundboard p {
+    margin-left: 20px;
+}
+
+
+/*________Testing CSS Animations________*/
+/* .parent {
+    background-color: blue;
+    height: 400px;
+    width: 400px;
+}
+
+.child {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    transition: transform 1s;
+}
+
+.parent:hover .child {
+    transform: translateX(300%);
+} */
+/*________End of testing________*/
