@@ -6,6 +6,15 @@ All changes are temporary*/
     padding: 0;
 }
 
+/*Background image and gradient needs working*/
+/* body {
+    background-image: url("img/Network.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: linear-gradient(180deg, rgb(119, 0, 255), rgb(0, 132, 255), rgb(0, 252, 42));
+} */
+
 h1 {
     font-size: 90px;
     font-family: Arial;
@@ -15,10 +24,9 @@ h1 {
 p {
     font-size: 18px;
     font-family: Times New Roman;
-    font-weight: bold;
 }
 
-/*--------Navigation bar--------*/
+/*________Navigation bar________*/
 
 /*A horizontal navigation bar that spans half of the page and
 is colored gray with black text and turns purple when hovering
@@ -29,10 +37,9 @@ nav {
     margin-left: 20px;
 }
 
-/*Background gradient needs working*/
 nav ul {
     list-style-type: none;
-    background: linear-gradient(to right, #8c8c8c 100%, #ffffff 0%);
+    background: linear-gradient(to right, #8c8c8c, #ffffff);
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -40,7 +47,7 @@ nav ul {
 
 nav a {
     padding: 15px;
-    background-color: gray;
+    background-color: rgb(161, 161, 161);
     color: black;
     display: block;
     text-decoration: none;
@@ -57,7 +64,7 @@ nav a:hover {
     background-color: purple;
     color: white;
 }
-/*--------Navigation Bar End--------*/
+/*________Navigation Bar End________*/
 
 /*Logo style*/
 .logo {
@@ -71,9 +78,9 @@ audio {
     margin: 10px;
 }
 
-/*Audio style is to be edited*/
+/*Audio style is to be edited.*/
 audio::-webkit-media-controls-panel {
-    background-color: aquamarine;
+    background-color: rgb(128, 90, 90);
 }
 
 footer {
@@ -83,9 +90,9 @@ footer {
     margin-top: 50px;
 }
 
-/*Temporary until p elements are inside div elements*/
 .soundboard p {
     margin-left: 20px;
+    font-weight: bold;
 }
 
 div.body {
@@ -93,10 +100,11 @@ div.body {
 }
 
 div.soundboard div {
-    background-color: grey;
+    background-image: linear-gradient(rgba(0, 132, 255, 1), rgba(255, 255, 255, 0.9));
     /* margin: 10px; */
     padding: 30px;
     border-radius: 20px;
+    transition: 500ms;
 }
 
 .soundboard {
