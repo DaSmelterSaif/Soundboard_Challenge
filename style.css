@@ -12,6 +12,12 @@ h1 {
     margin: 20px;
 }
 
+p {
+    font-size: 18px;
+    font-family: Times New Roman;
+    font-weight: bold;
+}
+
 /*--------Navigation bar--------*/
 
 /*A horizontal navigation bar that spans half of the page and
@@ -23,9 +29,10 @@ nav {
     margin-left: 20px;
 }
 
+/*Background gradient needs working*/
 nav ul {
     list-style-type: none;
-    background-color: gray;
+    background: linear-gradient(to right, #8c8c8c 100%, #ffffff 0%);
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -38,6 +45,7 @@ nav a {
     display: block;
     text-decoration: none;
     text-align: center;
+    transition: 500ms ;
 }
 
 nav li {
@@ -60,7 +68,7 @@ nav a:hover {
 
 /*Audio element style is to be reworked*/
 audio {
-    margin: 30px;
+    margin: 10px;
 }
 
 /*Audio style is to be edited*/
@@ -68,11 +76,40 @@ audio::-webkit-media-controls-panel {
     background-color: aquamarine;
 }
 
+footer {
+    background-color: grey;
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+}
+
 /*Temporary until p elements are inside div elements*/
-.Soundboard p {
+.soundboard p {
     margin-left: 20px;
 }
 
+div.body {
+    display: flex;
+}
+
+div.soundboard div {
+    background-color: grey;
+    /* margin: 10px; */
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.soundboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+/* .flex_grow {
+    flex-grow: 1;
+} */
 
 /*________Testing CSS Animations________*/
 /* .parent {
