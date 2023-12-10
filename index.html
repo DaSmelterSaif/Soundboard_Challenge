@@ -9,14 +9,19 @@
     <title>DaSmelter Soundboard</title>
   </head>
   <body>
-    <!--Logo of the website.-->
+    <!--____Logo of the website.____-->
     <img src="img/Logo.png" alt="DaSmelter Logo" class="logo" />
-    <!--Navigation bar-->
+    <!--Add a button to change to dark theme. Create a new .css file-->
+    <!--____Navigation bar____-->
     <nav>
       <ul>
         <!--Non-functional buttons. Need to be worked on later.-->
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Contact us</a></li>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Contact us</a>
+        </li>
       </ul>
     </nav>
     <!--The main body of the page.-->
@@ -25,53 +30,49 @@
     <div class="soundboard">
       <div>
         <p>Fakhri Siu</p>
-        <audio controls src="voices/fakhri-siu.mp3"></audio>
+        <button onclick="audioP(fakhri)"><img src="Img/Button.png" /></button>
       </div>
       <div>
         <p>Habib Bro</p>
-        <audio controls src="voices/habib-bro.mp3"></audio>
+        <button onclick="audioP(habib)"><img src="Img/Button.png" /></button>
       </div>
       <div>
         <p>Karim Altak 3l Radian</p>
-        <audio controls src="voices/karim-altak-3l-radian.mp3"></audio>
+        <button onclick="audioP(karim1)"><img src="Img/Button.png" /></button>
       </div>
       <div>
         <p>Karim Salam Alaikum</p>
-        <audio controls src="voices/karim-salam-alaikum.mp3"></audio>
+        <button onclick="audioP(karim2)"><img src="Img/Button.png" /></button>
       </div>
       <div>
         <p>Mahmoud Bekol Sohoola</p>
-        <audio controls src="voices/mahmoud-bekol-sohoola.mp3"></audio>
+        <button onclick="audioP(mahmoud1)"><img src="Img/Button.png" /></button>
       </div>
       <div>
         <p>Mahmoud Let's go</p>
-        <audio controls src="voices/mahmoud-lets-go.mp3"></audio>
+        <button onclick="audioP(mahmoud2)"><img src="Img/Button.png" /></button>
       </div>
       <div>
         <p>Mahmoud Okay</p>
-        <audio controls src="voices/mahmoud-okay.mp3"></audio>
+        <button onclick="audioP(mahmoud3)"><img src="Img/Button.png" /></button>
       </div>
       <div>
         <p>Saif Weird Sounds</p>
-        <audio controls src="voices/saif-@@@.mp3"></audio>
+        <button onclick="audioP(saif1)"><img src="Img/Button.png" /></button>
       </div>
       <div>
         <p>Saif Aloo Glitch</p>
-        <audio controls src="voices/saif-aloo-glitch.mp3"></audio>
+        <button onclick="audioP(saif2)"><img src="Img/Button.png" /></button>
       </div>
       <div class="flex_grow">
         <p>Saif Shabab (Earrape)</p>
-        <audio controls src="voices/saif-shabab.mp3"></audio>
+        <button onclick="audioP(saif3)"><img src="Img/Button.png" /></button>
       </div>
     </div>
-    <!--________Testing CSS animations________-->
-    <div class="parent">
-      <div class="child"></div>
-    </div>
-    <!--________Testing End________-->
     <div class="body">
-      <div></div>
-      <div></div>
+      <div><h2>What is this?</h2></div>
+      <div><h2>Who made this?</h2></div>
+      <div><h2>Additional information</h2></div>
     </div>
     <!--Planned paragraphs here:
     1-Who are we?

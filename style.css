@@ -1,12 +1,11 @@
-/*Style of the page is to be edited later.
-All changes are temporary*/
-
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-/*Background image and gradient needs working*/
+/*Background image and gradient needs working. The background
+should be split across the different div elements in the page*/
+
 /* body {
     background-image: url("img/Network.png");
     background-repeat: no-repeat;
@@ -16,14 +15,14 @@ All changes are temporary*/
 } */
 
 h1 {
-    font-size: 90px;
-    font-family: Arial;
-    margin: 20px;
+  font-size: 90px;
+  font-family: Arial;
+  margin: 20px;
 }
 
 p {
-    font-size: 18px;
-    font-family: Times New Roman;
+  font-size: 18px;
+  font-family: Times New Roman;
 }
 
 /*________Navigation bar________*/
@@ -33,107 +32,117 @@ is colored gray with black text and turns purple when hovering
 with white text color*/
 
 nav {
-    width: 50%;
-    margin-left: 20px;
+  width: 50%;
+  margin-left: 20px;
+  position: sticky;
+  top: 0;
 }
 
 nav ul {
-    list-style-type: none;
-    background: linear-gradient(to right, #8c8c8c, #ffffff);
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+  background: black;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 nav a {
-    padding: 15px;
-    background-color: rgb(161, 161, 161);
-    color: black;
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    transition: 500ms ;
+  display: block;
+  color: white;
+  text-decoration: none;
+  position: relative;
 }
 
 nav li {
-    float: left;
-    list-style-type: none;
+  float: left;
+  list-style-type: none;
+  padding: 11px;
 }
 
-nav a:hover {
-    background-color: purple;
-    color: white;
+nav a::after {
+  content: "";
+  background: white;
+  mix-blend-mode: exclusion;
+  width: calc(100% + 20px);
+  height: 0;
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  transition: all 100ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+nav a:hover::after {
+  height: calc(100% + 20px);
 }
 /*________Navigation Bar End________*/
 
 /*Logo style*/
 .logo {
-    width: 100px;
-    height: 100px;
-    padding: 20px;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
 }
 
-/*Audio element style is to be reworked*/
-audio {
-    margin: 10px;
-}
-
-/*Audio style is to be edited.*/
-audio::-webkit-media-controls-panel {
-    background-color: rgb(128, 90, 90);
-}
-
-footer {
-    background-color: grey;
-    width: 100%;
-    height: 200px;
-    margin-top: 50px;
-}
-
+/*________Soundbar________*/
 .soundboard p {
-    margin-left: 20px;
-    font-weight: bold;
+  margin-left: 20px;
+  font-weight: bold;
 }
 
-div.body {
-    display: flex;
+.soundboard button {
+  width: 100px;
+  height: 100px;
+  border: none;
+  background-color: transparent;
+}
+
+.soundboard img {
+  width: 90px;
+  height: 90px;
+}
+
+.soundboard img:active {
+  content: url(Img/Button_pressed.png);
 }
 
 div.soundboard div {
-    background-image: linear-gradient(rgba(0, 132, 255, 1), rgba(255, 255, 255, 0.9));
-    /* margin: 10px; */
-    padding: 30px;
-    border-radius: 20px;
-    transition: 500ms;
+  background-image: linear-gradient(
+    rgba(0, 132, 255, 1),
+    rgba(255, 255, 255, 0.9)
+  );
+  /* margin: 10px; */
+  padding: 30px;
+  border-radius: 20px;
+  transition: 500ms;
 }
 
 .soundboard {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin: 50px 0;
+}
+/*________Soundbar End________*/
+
+/*________Body Paragraphs________*/
+div.body {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
 }
 
-/* .flex_grow {
-    flex-grow: 1;
-} */
-
-/*________Testing CSS Animations________*/
-/* .parent {
-    background-color: blue;
-    height: 400px;
-    width: 400px;
+.body div {
+  background-color: rgb(85, 85, 255);
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
 }
+/*________Body Paragraphs End________*/
 
-.child {
-    background-color: red;
-    height: 100px;
-    width: 100px;
-    transition: transform 1s;
+footer {
+  background-color: grey;
+  width: 100%;
+  height: 200px;
+  margin-top: 50px;
 }
-
-.parent:hover .child {
-    transform: translateX(300%);
-} */
-/*________End of testing________*/
