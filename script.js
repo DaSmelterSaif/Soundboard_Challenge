@@ -1,3 +1,4 @@
+//Used to play the audio files
 const fakhri = new Audio("voices/fakhri-siu.mp3");
 const habib = new Audio("voices/habib-bro.mp3");
 const karim1 = new Audio("voices/karim-altak-3l-radian.mp3");

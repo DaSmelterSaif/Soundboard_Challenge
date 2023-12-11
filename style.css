@@ -3,26 +3,44 @@
   padding: 0;
 }
 
-/*Background image and gradient needs working. The background
-should be split across the different div elements in the page*/
-
-/* body {
-    background-image: url("img/Network.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-image: linear-gradient(180deg, rgb(119, 0, 255), rgb(0, 132, 255), rgb(0, 252, 42));
-} */
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: url(Img/Background_noise.png);
+}
 
 h1 {
   font-size: 90px;
-  font-family: Arial;
+  font-family: "Times New Roman", Times, serif;
   margin: 20px;
+}
+
+@media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 60px;
+  }
+}
+
+h2 {
+  color: white;
 }
 
 p {
   font-size: 18px;
-  font-family: Times New Roman;
+  font-family: Calibri;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: rgb(182, 187, 196);
+}
+
+a:active {
+  color: rgba(255, 255, 255, 0.1);
 }
 
 /*________Navigation bar________*/
@@ -32,14 +50,19 @@ is colored gray with black text and turns purple when hovering
 with white text color*/
 
 nav {
-  width: 50%;
+  width: 35%;
   margin-left: 20px;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 nav ul {
-  background: black;
+  background: linear-gradient(
+    to right,
+    rgb(22, 26, 48) 50%,
+    rgba(255, 255, 255, 0.1)
+  );
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -84,8 +107,8 @@ nav a:hover::after {
 
 /*________Soundbar________*/
 .soundboard p {
-  margin-left: 20px;
-  font-weight: bold;
+  text-align: center;
+  width: 50%;
 }
 
 .soundboard button {
@@ -105,14 +128,17 @@ nav a:hover::after {
 }
 
 div.soundboard div {
-  background-image: linear-gradient(
-    rgba(0, 132, 255, 1),
-    rgba(255, 255, 255, 0.9)
-  );
-  /* margin: 10px; */
-  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgb(49, 48, 77) 60%, rgb(182, 187, 196));
+  margin: 10px;
+  padding: 5px;
   border-radius: 20px;
   transition: 500ms;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
 }
 
 .soundboard {
@@ -120,8 +146,6 @@ div.soundboard div {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1em;
-  margin: 50px 0;
 }
 /*________Soundbar End________*/
 
@@ -129,20 +153,29 @@ div.soundboard div {
 div.body {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px;
   gap: 1em;
 }
 
 .body div {
-  background-color: rgb(85, 85, 255);
-  border-radius: 20px;
+  background: rgb(49, 48, 77);
+  border-radius: 5px;
   padding: 20px;
-  width: 300px;
+  width: 400px;
 }
 /*________Body Paragraphs End________*/
 
-footer {
-  background-color: grey;
+div.shadow {
+  background: linear-gradient(rgb(255, 255, 255), rgb(117, 117, 117));
   width: 100%;
-  height: 200px;
-  margin-top: 50px;
+  height: 50px;
+}
+
+footer {
+  background-color: rgb(22, 26, 48);
+  width: 100%;
+  height: 150px;
+  padding: 50px 30px;
+  box-sizing: border-box;
 }
